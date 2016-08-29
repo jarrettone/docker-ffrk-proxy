@@ -1,0 +1,11 @@
+application:
+  proxy:
+    whitelist: false
+    port: 5050
+  cert:
+    port: 5051
+  dump:
+    get_battle_init_data: false
+buddy:
+  attack:
+    counterability: false
