@@ -14,7 +14,7 @@
 
 # Introduction
 
-`Dockerfile` to create a [Docker](https://www.docker.com/) container image for [FFRK-Proxy](https://github.com/thauex/ffrk-proxy).
+`Dockerfile` to create a [Docker](https://www.docker.com/) container image for [FFRK Proxy](https://github.com/thauex/ffrk-proxy).
 
 FFRK Proxy is a proxy for Final Fantasy Record Keeper written in node.js.
 
