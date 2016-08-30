@@ -47,7 +47,7 @@ docker build -t jdel/ffrk-proxy github.com/jdel/docker-ffrk-proxy
 
 ## Quickstart
 
-Start Openfire using:
+Start FFRK Proxy using:
 
 ```bash
 docker run --name ffrk-proxy -d --restart=always \
