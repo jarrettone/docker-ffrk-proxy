@@ -1,7 +1,10 @@
 FFRKProxy:
-  image: jdel/ffrk-proxy:0.8.0
+  image: jdel/ffrk-proxy:0.9.0
   ports:
-    - "5050:5050"
-    - "5051:5051"
+    - "6050:6050"
+    - "6051:6051"
+  environment:
+    - proxy_port=6050
+    - cert_port=6051
   volumes:
     - /srv/docker/ffrk:/ffrk/config
