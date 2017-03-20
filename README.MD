@@ -1,4 +1,4 @@
-# jdel/docker-ffrk-proxy:0.9.0
+# jdel/docker-ffrk-proxy:0.9.1
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -36,7 +36,7 @@ Before reporting your issue please try updating Docker to the latest version and
 Builds are available on [Docker Hub](https://hub.docker.com/r/jdel/ffrk-proxy/).
 
 ```bash
-docker pull jdel/ffrk-proxy:0.9.0
+docker pull jdel/ffrk-proxy:0.9.1
 ```
 
 Alternatively you can build the image yourself.
@@ -52,7 +52,7 @@ Start FFRK Proxy using:
 ```bash
 docker run --name ffrk-proxy -d --restart=always \
   --publish 5050:5050 --publish 5051:5051 \
-  jdel/ffrk-proxy:0.9.0
+  jdel/ffrk-proxy:0.9.1
 ```
 
 *Alternatively, you can use the sample [docker-compose.yml](docker-compose.yml) file to start the container using [Docker Compose](https://docs.docker.com/compose/)*
@@ -72,7 +72,7 @@ docker run --name ffrk-proxy -d --restart=always \
   -p 6050:6050 -p 6051:6051 -e config=my_config_6050 \
   -e proxy_port=6050 -e cert_port=6051 \
   -v /srv/docker/ffrk/:/ffrk/config \
-  jdel/ffrk-proxy:0.9.0
+  jdel/ffrk-proxy:0.9.1
 ```
 
 # Maintenance
@@ -84,7 +84,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull jdel/ffrk-proxy:0.9.0
+  docker pull jdel/ffrk-proxy:0.9.1
   ```
 
   2. Stop the currently running image:
@@ -104,7 +104,7 @@ To upgrade to newer releases:
   ```bash
   docker run -name ffrk-proxy -d \
     [OPTIONS] \
-    jdel/ffrk-proxy:0.9.0
+    jdel/ffrk-proxy:0.9.1
   ```
 
 ## Shell Access
