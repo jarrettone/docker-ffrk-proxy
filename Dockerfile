@@ -5,8 +5,8 @@ RUN apk update \
  && apk add --no-cache ca-certificates curl \
  && apk upgrade \
  && rm -rf /var/cache/apk/* \
- && curl -L https://github.com/ThauEx/ffrk-proxy/archive/0.10.0.tar.gz | gunzip | tar -xf - -C / \
- && mv /ffrk-proxy-0.10.0 /ffrk
+ && curl -L https://github.com/ThauEx/ffrk-proxy/archive/0.11.0.tar.gz | gunzip | tar -xf - -C / \
+ && mv /ffrk-proxy-0.11.0 /ffrk
 
 WORKDIR /ffrk
 
