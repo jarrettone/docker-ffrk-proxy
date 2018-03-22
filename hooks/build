@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+echo "=-=-=-=-=-=-=- DEBUG INFO =-=-=-=-=-=-=-"
+echo "SOURCE_BRANCH: ${SOURCE_BRANCH}"
+echo "SOURCE_COMMIT: ${SOURCE_COMMIT}"
+echo "COMMIT_MSG: ${COMMIT_MSG}"
+echo "DOCKER_REPO: ${DOCKER_REPO}"
+echo "DOCKER_TAG: ${DOCKER_TAG}"
+echo "IMAGE_NAME: ${IMAGE_NAME}"
+echo "GIT_REV_PARSE: ${GIT_REV_PARSE}"
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+
+docker build --build-arg FFRK_PROXY_VERSION=${DOCKER_TAG} -t $IMAGE_NAME .
