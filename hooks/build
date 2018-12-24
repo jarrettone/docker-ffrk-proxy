@@ -10,4 +10,7 @@ echo "IMAGE_NAME: ${IMAGE_NAME}"
 echo "GIT_REV_PARSE: ${GIT_REV_PARSE}"
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
-docker build --build-arg FFRK_PROXY_VERSION=${DOCKER_TAG} -t $IMAGE_NAME .
+docker build \
+    --build-arg FFRK_PROXY_FORK=ThauEx/ffrk-proxy \
+    --build-arg FFRK_PROXY_VERSION=${DOCKER_TAG} \
+    -t $IMAGE_NAME .
